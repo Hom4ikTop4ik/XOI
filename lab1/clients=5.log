@@ -1,0 +1,79 @@
+./tester.sh 5
+[Script] Starting server...
+{SERVER} [Server 0] ConnectionManager started on port 12345
+[Script] Starting 5 clients...
+{clie_2} [Client clie_2] connecting to localhost:12345
+{SERVER} [Server 1] Accepted new client: /127.0.0.1:3665
+{SERVER} [Server 1] Got client name: clie_2
+{clie_2} [Client clie_2] Connected to server
+{SERVER} [Server 1] Start generate...
+{clie_2} [Client clie_2] Sent name to server
+{clie_2} [Client clie_2] 1_delaying 5 seconds before reading response
+{clie_3} [Client clie_3] connecting to localhost:12345
+{SERVER} [ServerGen Thread-32] Generating keys for 'clie_2'
+{clie_3} [Client clie_3] Connected to server
+{SERVER} [Server 1] Accepted new client: /127.0.0.1:3666
+{clie_3} [Client clie_3] Sent name to server
+{SERVER} [Server 1] Got client name: clie_3
+{SERVER} [Server 1] Start generate...
+{clie_3} [Client clie_3] 1_delaying 5 seconds before reading response
+{SERVER} [ServerGen Thread-33] Generating keys for 'clie_3'
+{clie_4} [Client clie_4] connecting to localhost:12345
+{SERVER} [Server 2] Accepted new client: /127.0.0.1:3667
+{SERVER} [Server 2] Got client name: clie_4
+{clie_4} [Client clie_4] Connected to server
+{SERVER} [Server 2] Start generate...
+{clie_4} [Client clie_4] Sent name to server
+{clie_4} [Client clie_4] 1_delaying 5 seconds before reading response
+{SERVER} [ServerGen Thread-34] Generating keys for 'clie_4'
+{clie_1} [Client clie_1] connecting to localhost:12345
+{SERVER} [Server 2] Accepted new client: /127.0.0.1:3668
+{clie_1} [Client clie_1] Connected to server
+{SERVER} [Server 2] Got client name: clie_1
+{clie_1} [Client clie_1] Sent name to server
+{SERVER} [Server 2] Start generate...
+{clie_1} [Client clie_1] 1_delaying 5 seconds before reading response
+{SERVER} [ServerGen Thread-35] Generating keys for 'clie_1'
+{clie_5} [Client clie_5] connecting to localhost:12345
+{SERVER} [Server 2] Accepted new client: /127.0.0.1:3669
+{SERVER} [Server 2] Got client name: clie_5
+{SERVER} [Server 2] Start generate...
+{clie_5} [Client clie_5] Connected to server
+{clie_5} [Client clie_5] Sent name to server
+{clie_5} [Client clie_5] 1_delaying 5 seconds before reading response
+{SERVER} [ServerGen Thread-32] DONE gen keys for 'clie_2'
+{SERVER} [Server] Keys for 'clie_2' generated
+{clie_2} [Client clie_2] 2_delaying 5 seconds before reading response
+{SERVER} [ServerGen Thread-32] Generating keys for 'clie_5'
+{SERVER} [Server 10] Sent keys and closed connection
+{SERVER} [ServerGen Thread-34] DONE gen keys for 'clie_4'
+{SERVER} [Server] Keys for 'clie_4' generated
+{SERVER} [Server 11] Sent keys and closed connection
+{clie_4} [Client clie_4] 2_delaying 5 seconds before reading response
+{SERVER} [ServerGen Thread-33] DONE gen keys for 'clie_3'
+{SERVER} [Server] Keys for 'clie_3' generated
+{clie_3} [Client clie_3] 2_delaying 5 seconds before reading response
+{SERVER} [Server 12] Sent keys and closed connection
+{clie_2} [Client clie_2] 3_delaying 5 seconds before reading response
+{clie_4} [Client clie_4] 3_delaying 5 seconds before reading response
+{clie_3} [Client clie_3] 3_delaying 5 seconds before reading response
+{SERVER} [ServerGen Thread-32] DONE gen keys for 'clie_5'
+{SERVER} [Server] Keys for 'clie_5' generated
+{SERVER} [Server 18] Sent keys and closed connection
+{clie_5} [Client clie_5] 2_delaying 5 seconds before reading response
+{SERVER} [ServerGen Thread-35] DONE gen keys for 'clie_1'
+{SERVER} [Server] Keys for 'clie_1' generated
+{SERVER} [Server 19] Sent keys and closed connection
+{clie_1} [Client clie_1] 2_delaying 5 seconds before reading response
+{clie_2} [Client clie_2] 4_delaying 5 seconds before reading response
+{clie_4} [Client clie_4] 4_delaying 5 seconds before reading response
+{clie_3} [Client clie_3] 4_delaying 5 seconds before reading response
+{clie_5} [Client clie_5] 3_delaying 5 seconds before reading response
+{clie_1} [Client clie_1] 3_delaying 5 seconds before reading response
+{clie_2} [Client clie_2] saved private key to clientCerts/clie_2_20251008_133220.key, certificate to clientCerts/clie_2_20251008_133220.crt
+{clie_4} [Client clie_4] saved private key to clientCerts/clie_4_20251008_133221.key, certificate to clientCerts/clie_4_20251008_133221.crt
+{clie_3} [Client clie_3] saved private key to clientCerts/clie_3_20251008_133222.key, certificate to clientCerts/clie_3_20251008_133222.crt
+{clie_5} [Client clie_5] 4_delaying 5 seconds before reading response
+{clie_1} [Client clie_1] 4_delaying 5 seconds before reading response
+{clie_5} [Client clie_5] saved private key to clientCerts/clie_5_20251008_133228.key, certificate to clientCerts/clie_5_20251008_133228.crt
+{clie_1} [Client clie_1] saved private key to clientCerts/clie_1_20251008_133229.key, certificate to clientCerts/clie_1_20251008_133229.crt

@@ -1,0 +1,311 @@
+1
+2
+3
+4
+6
+7
+
+
+
+> Task :ru.nsu.martynov.Main.main()
+Current list status:
+7
+6
+4
+3
+1
+2
+Current list status:
+6
+4
+7
+1
+3
+2
+
+
+
+
+
+Current list status:
+6
+4
+7
+1
+3
+2
+Current list status:
+4
+1
+6
+7
+3
+7
+2
+Current list status:
+4
+1
+6
+3
+7
+2
+Current list status:
+4
+1
+6
+3
+7
+2
+Current list status:
+4
+1
+6
+3
+7
+2
+
+
+
+
+Current list status:
+1
+3
+4
+2
+6
+7
+Current list status:
+1
+3
+4
+2
+6
+7
+Current list status:
+1
+3
+4
+2
+6
+7
+Current list status:
+1
+3
+2
+4
+6
+7
+Current list status:
+1
+2
+3
+4
+6
+7
+Current list status:
+1
+2
+3
+4
+6
+7
+Current list status:
+1
+2
+3
+4
+6
+7
+
+
+
+
+
+
+Current list status:
+1
+2
+3
+4
+6
+7
+Current list status:
+1
+2
+3
+4
+6
+7
+Current list status:
+1
+2
+3
+4
+6
+7
+Current list status:
+1
+2
+3
+4
+6
+7
+Current list status:
+1
+2
+3
+4
+6
+7
+Current list status:
+1
+2
+3
+4
+6
+7
+5
+
+
+
+
+
+Current list status:
+5
+1
+2
+3
+4
+6
+7
+Current list status:
+5
+1
+2
+3
+4
+6
+7
+Current list status:
+5
+1
+2
+3
+4
+6
+7
+Current list status:
+5
+1
+2
+3
+4
+6
+7
+Current list status:
+5
+1
+2
+3
+4
+6
+7
+
+
+
+
+Current list status:
+1
+2
+5
+3
+4
+6
+7
+Current list status:
+1
+2
+5
+3
+4
+6
+7
+Current list status:
+1
+2
+3
+5
+4
+6
+7
+Current list status:
+1
+2
+3
+5
+4
+6
+7
+
+
+
+
+
+
+
+Current list status:
+1
+2
+3
+4
+5
+6
+7
+Current list status:
+1
+2
+3
+4
+5
+6
+7
+Current list status:
+1
+2
+3
+4
+5
+6
+7
+Current list status:
+1
+2
+3
+4
+5
+6
+7
+Current list status:
+1
+2
+3
+4
+5
+6
+7
+Current list status:
+1
+2
+3
+4
+5
+6
+7
+Current list status:
+1
+2
+3
+4
+5
+6
+7

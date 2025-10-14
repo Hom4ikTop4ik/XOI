@@ -1,11 +1,14 @@
 package ru.nsu.martynov;
 
-class SortThread extends Thread {
-    private final MyLinkedList list;
+import java.util.Collections;
+import java.util.List;
+
+class SortThreadSyncList extends Thread {
+    private final List<String> list;
     private final int delayStep;
     private final int delayCycle;
 
-    public SortThread(MyLinkedList list, int delayStep, int delayCycle) {
+    public SortThreadSyncList(List<String> list, int delayStep, int delayCycle) {
         this.list = list;
         this.delayStep = delayStep;
         this.delayCycle = delayCycle;
@@ -25,19 +28,18 @@ class SortThread extends Thread {
     @Override
     public void run() {
         while (true) {
-            Node current = list.getHead();
-            while (current != null) {
-                list.trySwapNext(current);
+            for (int i = 0; i < list.size() - 1; i++) {
+                synchronized (list) {
+                    String a = list.get(i);
+                    String b = list.get(i + 1);
+                    if (a.compareTo(b) > 0) {
+                        Collections.swap(list, i, i + 1);
+                    }
+                }
                 mySleep(delayStep);
-
-                current.lock.lock();
-                Node next = current.next;
-                current.lock.unlock();
-
-                current = next;
             }
-
             mySleep(delayCycle);
         }
     }
 }
+

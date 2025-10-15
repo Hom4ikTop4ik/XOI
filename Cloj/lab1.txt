@@ -1,7 +1,7 @@
 (defn all-strings [alphabet n]
   (nth
     (iterate
-      (fn [lst]
+      (fn [list]
         (apply concat
                (map
                  (fn [s]
@@ -15,6 +15,6 @@
                              (= c ch))
                            s))
                        alphabet)))
-                 lst)))
+                 list)))
       alphabet)
     (dec n)))

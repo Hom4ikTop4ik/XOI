@@ -1,20 +1,19 @@
-(defn all-strings [alphabet n]
+(defn all-strings
+  [alphabet n]
   (nth
     (iterate
       (fn [list]
         (apply concat
-               (map
-                 (fn [s]
-                   (map
-                     (fn [ch]
-                       (str s ch))
-                     (filter
-                       (fn [ch]
-                         (not-any?
-                           (fn [c]
-                             (= c ch))
-                           s))
-                       alphabet)))
-                 list)))
+          (map
+            (fn [s]
+              (map
+                (fn [ch] (str s ch))
+                (filter
+                  (fn [ch]
+                    (not= (last s) ch))
+                  alphabet)))
+            list)))
       alphabet)
     (dec n)))
+
+(all-strings '("a" "b" "c") 2)

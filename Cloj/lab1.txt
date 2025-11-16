@@ -2,18 +2,37 @@
   [alphabet n]
   (nth
     (iterate
-      (fn [list]
+      (fn [lst]
         (apply concat
           (map
             (fn [s]
               (map
                 (fn [ch] (str s ch))
                 (filter
-                  (fn [ch]
-                    (not= (last s) ch))
+                  (fn [ch] (not= (str (last s)) ch))
                   alphabet)))
-            list)))
+            lst)))
       alphabet)
     (dec n)))
 
-(all-strings '("a" "b" "c") 2)
+(println (all-strings '("a" "b" "c") 2))
+
+
+
+;; тестер принимает тесты
+(defn expected-count
+  [alphabet n]
+  (let [A (count alphabet)]
+    (if (<= n 0)
+      0
+      (* A (long (Math/pow (dec A) (dec n)))))))
+
+(defn test-all-strings
+  [alphabet n]
+  (let [res (all-strings alphabet n)
+        expected (expected-count alphabet n)]
+    {:generated (count res)
+     :expected expected
+     :ok? (= (count res) expected)}))
+
+(println (test-all-strings '("a" "b" "c") 4))

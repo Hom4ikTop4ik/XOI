@@ -1,0 +1,106 @@
+(ns task-c3)
+(require '[clojure.test :refer :all])
+
+(defn pfilter
+  [pred seque]
+  (let [
+          ;; Minecraft — это моя жизнь. MINECRA-A-AFT!
+          chunk-size 16
+          
+          ;; Кол-во параллельно обрабатываемых пачек
+          threads 8
+          
+          ;; Смешная нарезка входной последователности на пачки
+          chunks (partition-all chunk-size seque)
+          
+          ;; Ленивая последовательность фьючеров.
+          ;; Я тебя породил, я тебя и... позже выполню
+          futures (
+                    map (
+                          fn [chunk]
+                          (future (doall (filter pred chunk)))
+                        )
+                    chunks
+                  )
+        ]
+
+    (letfn [
+            (main-part [fs]
+              (lazy-seq
+                (
+                  ; "Clojure, выполни код ниже если последовательность НЕпуста"
+                  when-let [s (seq fs)]
+                  
+                  ; Просим Clojure параллельно запустить обработку
+                  ;; заставляем map (который ещё в let) создать фьючеры и отправить их на исполнение.
+                  ;; doall гарантирует, что мы пробежали по списку и запустили задачи.
+                  (doall (take threads s))
+                  
+                  ; Возвращаем результат первого блока (deref блокирует, если он ещё не готов), а хвост вычисляем рекурсивно. 
+                  ;; Благодаря (take threads) выше, следующие блоки уже вовсю вычисляются, пока мы ждем этот deref.
+                  ;; Если же они уже вычислились, то мы быстро их вернём и рекурсия быстро проскочит вглубь
+                  (cons (deref (first s))
+                        (main-part (rest s)))
+
+                  ; cons подставит deref в начало, а рекурсивный остаток main-part подставит после него
+                  ;; first, ..rest 
+                )
+              )
+            )
+          ]
+      
+      ;; Склейка чанков обратно в единый поток
+      (apply concat (main-part futures))
+    )
+    ; конец основной функции
+
+  )
+)
+
+
+
+
+;; Tests
+(deftest test-empty
+    (is (= '() (pfilter identity [])))
+    (is (= '() (pfilter identity nil))))
+
+(deftest all
+    (is (= (range 10) (pfilter (constantly true) '(0 1 2 3 4 5 6 7 8 9)))))
+
+(deftest even
+    (is (= '(0 2 4 6 8)) (pfilter even? (range 10)))
+)
+
+(deftest odd
+    (is (= '(1 3 5 7 9)) (pfilter odd? (range 10)))
+)
+
+(run-tests)
+
+
+
+
+
+;; Performance
+(
+  defn very-hard-work [x]
+    (Thread/sleep 1) 
+    (even? x)
+)
+
+(defn demo-performance []
+  (let [n 3000 ;; ~3 secs
+        data (doall (range n))] ;; doall чтоб предподготовить range
+    
+    (println "\n--> Running standard filter...")
+    (time (doall (filter very-hard-work data)))
+    
+    (println "\n--> Running my pfilter...")
+    (time (doall (pfilter very-hard-work data))))
+  
+  (println "\n==============================================\n")
+)
+
+
+(demo-performance)

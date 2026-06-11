@@ -1,0 +1,330 @@
+=== XML STATISTICS ===
+
+=== Element counts ===
+brother: 5565
+child: 9954
+children: 44547
+children-number: 57624
+daughter: 20245
+family: 15409
+family-name: 11472
+father: 13791
+first: 15409
+firstname: 57450
+fullname: 15409
+gender: 57493
+husband: 16143
+id: 57357
+mother: 13774
+parent: 87758
+people: 1
+person: 299756
+siblings: 98476
+siblings-number: 57238
+sister: 5576
+son: 20337
+spouce: 25826
+surname: 46045
+wife: 15969
+
+=== Atributy po tegam ===
+children-number -> [value]
+daughter -> [id]
+firstname -> [value]
+gender -> [value]
+husband -> [value]
+id -> [value]
+parent -> [value]
+people -> [count]
+person -> [id, name]
+siblings -> [val]
+siblings-number -> [value]
+son -> [id]
+spouce -> [value]
+surname -> [value]
+wife -> [value]
+
+=== Paths and samples ===
+PATH                                                    | COUNT      | ATTRIBUTES         | SAMPLES
+--------------------------------------------------------------------------------------------------------------
+people                                                  | 1          | [count]            | []
+people/person                                           | 299756     | [id, name]         | []
+people/person/children                                  | 44547      | []                 | []
+people/person/children-number                           | 57624      | [value]            | []
+people/person/children/child                            | 9954       | []                 | [Avis Spoonemore, Manda Becerril, Troy Jannsen, Isabelle Jannsen, Lupe Lambing, Cyrus Gorenflo, Annalisa Jaye, Princess Zoll, Renetta Dorries, Jody Harkleroad]
+people/person/children/daughter                         | 20245      | [id]               | []
+people/person/children/son                              | 20337      | [id]               | []
+people/person/family-name                               | 11472      | []                 | [Mone, Bullert, Failla, Woytek, Tunney, Ona, Robbinson, Newball, Phelan, Delana]
+people/person/father                                    | 13791      | []                 | [Ezra Turay, Kathy Debrita, Karlyn Banet, Antonette Suennen, Nella Sprague, Ginette Vanderlinde, Ahmed Nordeen, Derick Obrecht, Apolonia Challa, Cecila Maltba]
+people/person/firstname                                 | 57450      | [value]            | [Freda, Mitsue, Shanel, Dorcas, Ardath, Ira, Winona, Beatriz, Racquel, Claretha]
+people/person/fullname                                  | 15409      | []                 | []
+people/person/fullname/family                           | 15409      | []                 | [Zaic, Rabassa, Verduzco, Chockley, Pett, Cruzado, Paglialunga, Saffold, Oger, Mcnamer]
+people/person/fullname/first                            | 15409      | []                 | [Lexie, Freda, Deb, Jonna, Ami, Era, Clara, Janeth, Annamaria, Gretta]
+people/person/gender                                    | 57493      | [value]            | [F, M]
+people/person/husband                                   | 16143      | [value]            | []
+people/person/id                                        | 57357      | [value]            | []
+people/person/mother                                    | 13774      | []                 | [Gita Schnetter, Raquel Domann, Isela Mazzarella, Mei Christle, Tarah Mcnamer, Hildegard Albiston, Markus Brilliant, Reagan Lafoon, Pearle Obrecht, Shirl Bochat]
+people/person/parent                                    | 87758      | [value]            | [UNKNOWN]
+people/person/siblings                                  | 98476      | [val]              | []
+people/person/siblings-number                           | 57238      | [value]            | []
+people/person/siblings/brother                          | 5565       | []                 | [Clementina Sevedge, Carly Ritt, Judie Mulich, Therese Vanderlinde, Deandra Nickenberry, Kandi Brilliant, Aleta Ellsworth, Ettie Scurry, Maryln Landrigan, German Spalinger]
+people/person/siblings/sister                           | 5576       | []                 | [Federico Vanbebber, Lottie Sukhram, Rena Lenix, Gianna Nickenberry, Sabine Gruiger, Rodrigo Landrigan, Lecia Ruggs, Shaunda Kraham, Leola Kushner, Nathalie Kornbluth]
+people/person/spouce                                    | 25826      | [value]            | []
+people/person/surname                                   | 46045      | [value]            | []
+people/person/wife                                      | 15969      | [value]            | []
+
+=== Top values by path (только первые 10) ===
+people/@count:
+  32742 -> 1
+people/person/@id:
+  P379592 -> 7
+  P379593 -> 10
+  P379594 -> 8
+  P379595 -> 9
+  P379596 -> 9
+  P379598 -> 16
+  P379601 -> 9
+  P379602 -> 4
+  P379603 -> 11
+  P379604 -> 7
+people/person/@name:
+   Aaron Lechler -> 1
+   Aaron Spaeth -> 1
+   Adaline Shappell -> 1
+   Adeline Gorz -> 1
+   Adina Oberg -> 1
+   Adrian  Luttenegger -> 1
+   Agueda Baldassano -> 1
+   Alan Singer -> 1
+   Alberta Barnaby -> 1
+   Albertina Billig -> 1
+people/person/children-number/@value:
+  0 -> 35814
+  1 -> 6696
+  2 -> 6488
+  3 -> 4305
+  4 -> 3329
+  5 -> 992
+people/person/children/child:
+  Aaron Gibbon -> 3
+  Aaron Lechler -> 2
+  Abby Pyne -> 1
+  Abdul Richberg -> 4
+  Abel Bielefield -> 2
+  Abel Busuttil -> 1
+  Abel Lazzell -> 1
+  Abigail Demayo -> 4
+  Abigail Gittelman -> 1
+  Abram Hildahl -> 3
+people/person/children/daughter/@id:
+  P386685 -> 1
+  P386688 -> 1
+  P386691 -> 2
+  P386696 -> 4
+  P386698 -> 2
+  P386700 -> 4
+  P386701 -> 4
+  P386702 -> 2
+  P386705 -> 5
+  P386706 -> 5
+people/person/children/son/@id:
+  P386683 -> 1
+  P386684 -> 1
+  P386686 -> 3
+  P386687 -> 1
+  P386689 -> 2
+  P386690 -> 2
+  P386692 -> 2
+  P386693 -> 3
+  P386694 -> 4
+  P386695 -> 2
+people/person/family-name:
+  Aarons -> 1
+  Abdula -> 4
+  Abedelah -> 5
+  Aber -> 3
+  Abeyta -> 5
+  Acey -> 2
+  Achane -> 4
+  Acheson -> 1
+  Ackah -> 1
+  Ackles -> 6
+people/person/father:
+  Aaron Dominque -> 8
+  Abbie Satterwhite -> 1
+  Abby Pyne -> 3
+  Abdul Werre -> 1
+  Abe Steagell -> 2
+  Abel Busuttil -> 2
+  Abel Kalama -> 6
+  Abraham Bevel -> 7
+  Abram Pyne -> 4
+  Abram Ralko -> 5
+people/person/firstname:
+  Abbey -> 4
+  Abbie -> 2
+  Abe -> 2
+  Abel -> 4
+  Abram -> 3
+  Adalberto -> 2
+  Adaline -> 1
+  Adam -> 4
+  Adan -> 4
+  Addie -> 3
+people/person/firstname/@value:
+  Aaron -> 11
+  Abbey -> 8
+  Abbie -> 9
+  Abby -> 16
+  Abdul -> 11
+  Abe -> 8
+  Abel -> 7
+  Abigail -> 13
+  Abraham -> 13
+  Abram -> 13
+people/person/fullname/family:
+  Aagaard -> 11
+  Aarons -> 16
+  Abdelhamid -> 5
+  Abdelmuti -> 11
+  Aber -> 8
+  Abeyta -> 11
+  Acheson -> 6
+  Acord -> 6
+  Acri -> 7
+  Adamis -> 5
+people/person/fullname/first:
+  Abe -> 4
+  Abigail -> 11
+  Adalberto -> 6
+  Adaline -> 9
+  Addie -> 8
+  Adele -> 6
+  Adella -> 5
+  Adrian -> 12
+  Adrianne -> 9
+  Agustina -> 8
+people/person/gender:
+  F -> 8904
+  M -> 8543
+people/person/gender/@value:
+  female -> 19787
+  male -> 20259
+people/person/husband/@value:
+  P379594 -> 2
+  P379597 -> 1
+  P379602 -> 3
+  P379606 -> 2
+  P379610 -> 1
+  P379613 -> 4
+  P379618 -> 1
+  P379620 -> 2
+  P379621 -> 3
+  P379623 -> 1
+people/person/id/@value:
+  P379592 -> 2
+  P379593 -> 1
+  P379594 -> 2
+  P379595 -> 2
+  P379596 -> 1
+  P379597 -> 2
+  P379598 -> 3
+  P379599 -> 1
+  P379600 -> 2
+  P379601 -> 1
+people/person/mother:
+  Aaron Gibbon -> 2
+  Aaron Plenty -> 3
+  Abbey Newbound -> 3
+  Abbey Swanson -> 4
+  Abbey Wiberg -> 1
+  Abbie Bratz -> 2
+  Abbie Nokes -> 2
+  Abby Bitting -> 1
+  Abby Yarrow -> 1
+  Abdul Colder -> 3
+people/person/parent:
+  UNKNOWN -> 30857
+people/person/parent/@value:
+  P379596 -> 3
+  P379597 -> 3
+  P379601 -> 3
+  P379605 -> 4
+  P379606 -> 2
+  P379607 -> 1
+  P379608 -> 3
+  P379609 -> 2
+  P379611 -> 2
+  P379612 -> 3
+people/person/siblings-number/@value:
+  0 -> 7741
+  1 -> 14763
+  2 -> 14241
+  3 -> 14969
+  4 -> 5524
+people/person/siblings/@val:
+  P379593 -> 7
+  P379593 P379596 -> 1
+  P379594 -> 4
+  P379595 -> 6
+  P379596 -> 4
+  P379597 -> 3
+  P379598 -> 5
+  P379598 P379600 -> 1
+  P379599 -> 5
+  P379599 P379600 -> 1
+people/person/siblings/brother:
+  Aaron Lechler -> 3
+  Abbey Terlecki -> 2
+  Abe Montford -> 1
+  Abel Almsteadt -> 1
+  Abram Hildahl -> 3
+  Adah Gantner -> 2
+  Adaline Duguette -> 1
+  Adaline Manusyants -> 4
+  Adam Nokes -> 2
+  Adan Player -> 1
+people/person/siblings/sister:
+  Aaron Friedle -> 2
+  Aaron Gibbon -> 1
+  Abbey Awad -> 6
+  Abbey Delasko -> 2
+  Abdul Colder -> 1
+  Abigail Atteberry -> 1
+  Abigail Sahm -> 2
+  Abraham Crother -> 1
+  Adan Binetti -> 1
+  Adelaida Franza -> 1
+people/person/spouce/@value:
+   Adaline Manusyants -> 1
+   Adelle Paladino -> 1
+   Alejandro Saylors -> 1
+   Alfonzo  Ebey -> 1
+   Alisa Briand -> 1
+   Allie Goggans -> 1
+   Allison   Bame -> 1
+   Angel Ouinones -> 1
+   Angelique Vanek -> 1
+   Angie  Daddio -> 1
+people/person/surname/@value:
+  Aagaard -> 10
+  Aarhus -> 3
+  Aarons -> 9
+  Abdelhamid -> 2
+  Abdelmuti -> 5
+  Abdula -> 1
+  Abe -> 3
+  Abedelah -> 7
+  Aber -> 24
+  Abeyta -> 9
+people/person/wife/@value:
+  P379600 -> 1
+  P379605 -> 2
+  P379607 -> 3
+  P379608 -> 1
+  P379609 -> 2
+  P379611 -> 1
+  P379612 -> 1
+  P379617 -> 3
+  P379619 -> 2
+  P379625 -> 1

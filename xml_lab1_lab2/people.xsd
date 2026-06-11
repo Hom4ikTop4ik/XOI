@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <xs:element name="people">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="person" type="PersonType" maxOccurs="unbounded"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:complexType name="PersonType">
+        <xs:sequence>
+            <xs:element name="firstname" type="xs:string"/>
+            <xs:element name="surname" type="xs:string"/>
+            <xs:element name="gender" type="xs:string"/>
+            <xs:element name="relations" type="RelationsType" minOccurs="0"/>
+        </xs:sequence>
+        <xs:attribute name="id" type="xs:ID" use="required"/>
+    </xs:complexType>
+
+    <xs:complexType name="RelationsType">
+        <xs:sequence>
+
+            <!-- Строгие связи, используем IDREF -->
+            <xs:element name="parent" type="PersonRefType" minOccurs="0"/>
+            <xs:element name="father" type="PersonRefType" minOccurs="0"/>
+            <xs:element name="mother" type="PersonRefType" minOccurs="0"/>
+
+            <xs:element name="spouse" type="PersonRefType" minOccurs="0"/>
+            <xs:element name="husband" type="PersonRefType" minOccurs="0"/>
+            <xs:element name="wife" type="PersonRefType" minOccurs="0"/>
+
+            <xs:element name="child" type="PersonRefType" minOccurs="0" maxOccurs="unbounded"/>
+            <xs:element name="son" type="PersonRefType" minOccurs="0" maxOccurs="unbounded"/>
+            <xs:element name="daughter" type="PersonRefType" minOccurs="0" maxOccurs="unbounded"/>
+
+            <xs:element name="sibling" type="PersonRefType" minOccurs="0" maxOccurs="unbounded"/>
+            <xs:element name="brother" type="PersonRefType" minOccurs="0" maxOccurs="unbounded"/>
+            <xs:element name="sister" type="PersonRefType" minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="PersonRefType">
+        <xs:attribute name="ref" type="xs:IDREF" use="required"/>
+    </xs:complexType>
+
+</xs:schema>

@@ -1,0 +1,22 @@
+plugins {
+    id 'java'
+}
+
+group = 'ru.nsu.martynov'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(21)
+    }
+}
+
+dependencies {
+    // JAXB API и Runtime для генерации и валидации XML (Task X2)
+    implementation 'jakarta.xml.bind:jakarta.xml.bind-api:4.0.0'
+    runtimeOnly 'org.glassfish.jaxb:jaxb-runtime:4.0.3'
+}

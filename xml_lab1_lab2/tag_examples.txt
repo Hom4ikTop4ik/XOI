@@ -1,0 +1,151 @@
+=== Top values by path (first few only) ===
+people/@count:
+  32742 -> 2
+people/person/@id:
+  P397288 -> 11
+  P397018 -> 8
+  P381674 -> 13
+  P383359 -> 10
+  P390784 -> 10
+  P390837 -> 8
+  P391171 -> 6
+  P409000 -> 13
+  P398237 -> 8
+  P397893 -> 8
+people/person/@name:
+  Ivonne Datta -> 10
+  Mitsue Dellarocco -> 7
+  Alexis Borchardt -> 11
+  James  Pharis -> 1
+  Sharee Idemoto -> 10
+  Raguel Pedralba -> 11
+  Shanel Gatheright -> 8
+  Floretta Sevedge -> 10
+  Jolanda  Shinnick -> 2
+  Vania Suennen -> 11
+people/person/children-number/@value:
+  0 -> 35814
+  3 -> 4305
+  5 -> 992
+  2 -> 6488
+  4 -> 3329
+  1 -> 6696
+people/person/children/daughter/@id:
+  P391131 -> 2
+  P399233 -> 1
+  P386968 -> 1
+  P390951 -> 4
+  P408349 -> 2
+  P386706 -> 5
+  P399025 -> 1
+  P396625 -> 4
+  P396655 -> 7
+  P396656 -> 6
+people/person/children/son/@id:
+  P399429 -> 2
+  P389824 -> 4
+  P399781 -> 4
+  P407701 -> 3
+  P407700 -> 2
+  P399023 -> 2
+  P387567 -> 2
+  P390831 -> 4
+  P397595 -> 4
+  P397594 -> 6
+people/person/firstname/@value:
+  Ben -> 13
+  Ivonne -> 12
+  Meryl -> 15
+  Mallie -> 6
+  Cassi -> 13
+  Corie -> 14
+  Debbra -> 9
+  Jolanda -> 11
+  Sharell -> 9
+  Nelly -> 15
+people/person/gender/@value:
+  female -> 19787
+  male -> 20259
+people/person/husband/@value:
+  P407551 -> 2
+  P403287 -> 3
+  P382375 -> 2
+  P398522 -> 3
+  P388422 -> 2
+  P394488 -> 2
+  P397074 -> 2
+  P405234 -> 2
+  P398310 -> 2
+  P404733 -> 1
+people/person/id/@value:
+  P412263 -> 4
+  P397893 -> 2
+  P387247 -> 1
+  P403120 -> 2
+  P406602 -> 1
+  P386825 -> 5
+  P391186 -> 1
+  P402028 -> 1
+  P380747 -> 4
+  P401238 -> 2
+people/person/parent/@value:
+  UNKNOWN -> 30140
+  P399516 -> 7
+  P383387 -> 3
+  P384952 -> 2
+  P380602 -> 3
+  P398271 -> 2
+  P385961 -> 3
+  P385326 -> 2
+  P398554 -> 3
+  P404333 -> 1
+people/person/siblings-number/@value:
+  2 -> 14241
+  3 -> 14969
+  0 -> 7741
+  1 -> 14763
+  4 -> 5524
+people/person/siblings/@val:
+  P397019 -> 2
+  P407730 -> 5
+  P390839 -> 4
+  P408996 -> 6
+  P386420 -> 1
+  P397418 P397417 -> 1
+  P412266 -> 7
+  P387248 -> 3
+  P387717 -> 2
+  P381922 P381920 -> 2
+people/person/spouce/@value:
+  Bryanna Saleeby -> 3
+  Aida Sweazey -> 1
+  NONE -> 14393
+  Joeann Silvester -> 3
+  Karon  Balsiger -> 1
+  Danica Castagna -> 4
+  Bill Rubert -> 2
+  Bell Moberg -> 2
+  Cori Stidstone -> 2
+  Palmira Mcpartlin -> 4
+people/person/surname/@value:
+  Zaic -> 7
+  Pharis -> 37
+  Pett -> 27
+  Parduhn -> 3
+  Seachord -> 6
+  Bischoff -> 20
+  Tags -> 17
+  Ritt -> 17
+  Phelan -> 10
+  Kagel -> 11
+people/person/wife/@value:
+  P397949 -> 4
+  P381854 -> 1
+  P411825 -> 3
+  P401070 -> 1
+  P408005 -> 2
+  P411566 -> 3
+  P392273 -> 2
+  P380877 -> 1
+  P406269 -> 2
+  P406090 -> 1
